@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://larchenko.expert/slick/slick.css">
+    <link rel="stylesheet" href="https://larchenko.expert/slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="up">
+        <img class="logo" >
+        <div class="afisha">Афиша</div>
+        <div class="signup">Регистрация</div>
+        <div class="about">О нас</div>
+    </div>
+    <div class="first">
+        <div class="photo1"></div>
+    </div>
+    <div class="container">
+        <button onclick="document.querySelector('.calendar-wrapper').style.display = 'block' 
+                        document.querySelector('.arcicle__slider').style.display = 'none'
+        ">Календарь</button>
+        <button onclick="document.querySelector('.calendar-wrapper').style.display = 'none' 
+                        document.querySelector('.arcicle__slider').style.display = 'block'
+        ">Афиша</button>
+        <div class="arcicle__slider">
+            
+            <div class="slider__img" style="background-image: url(/images/photo_5395651269915439432_y.jpg); background-size: cover; "></div>
+            <div class="slider__img" style="background-image: url(/images/photo_5395651269915439433_y.jpg); background-size: cover; "></div>
+            <div class="slider__img" style="background-image: url(/images/photo_5395651269915439434_y\ \(1\).jpg); background-size: cover; "></div>
+            <div class="slider__img" style="background-image: url(/images/photo_5395651269915439436_y.jpg); background-size: cover; "></div>
+            <div class="slider__img" style="background-image: url(/images/photo_5395651269915439437_y.jpg); background-size: cover; "></div>
+        </div>
+    </div>
+    <!-- <div class="btns">
+        <button class="btn" onclick="left()">←</button>
+        <button class="btn" onclick="right()">→</button>
+    </div>
+    <div class="slider">
+            <div class="slider__img1"></div>
+            <div class="slider__img2" ></div>
+            <div class="slider__main" ></div>
+            <div class="slider__img3"></div>
+            <div class="slider__img4" ></div>
+    </div> -->
+
+    <div class="calendar-wrapper">
+        <button id="btnPrev" type="button">Предыдущий</button>
+        <button id="btnNext" type="button">Следующий</button>
+    <div id="divCal"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://larchenko.expert/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
