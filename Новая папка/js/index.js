@@ -90,7 +90,7 @@ var Cal = function(divId) {
         html += '<td class="today">' + i + '</td>';
       } else {
         // html += '<div id="'+ i +'"></div>'
-        html += '<td class="normal" id="' + i + '">' + i + '</td>';
+        html += `<td class="normal" id="${i}"><div class="item"> ${i}</div></td>`;
       }
       // закрыть строку в воскресенье
       if ( dow == 0 ) {

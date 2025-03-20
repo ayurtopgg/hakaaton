@@ -1,50 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .logo{
     width: 10vh;
     height: 10vh;
     position: relative;
 }
 .up{
-    position: absolute;
     position: fixed;
-    display: block;
-    margin: -1vh;
-    margin-left: -2vh;
-    margin-top: -2vh;
-    width: 102%;
     height: 10vh;
-    background-color: rgb(227, 255, 183);
-    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
     z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.up div{
+    color: white;
+    font-size: 14px;
+}
+.menu{
+    display: flex;
+    padding: 0 30px 0 0;
 }
 body{
-    height: 1000vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
-.afisha{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif ;
-    position: absolute;
-    width: 15vh;
-    margin-top: -7vh;
-    margin-left: 130vh;
-}
-.signup{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif ;
-    position: absolute;
-    width: 15vh;
-    margin-top: -7vh;
-    margin-left: 145vh;
+.menu div:nth-child(2){
+    margin: 0 20px;
 }
 
-.about{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif ;
-    position: relative;
-    width: 15vh;
-    margin-top: -7vh;
-    margin-left: 170vh;
-}
+
 .photo1{
     width: 103%;
     height: 1000px;
